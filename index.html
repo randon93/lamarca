@@ -253,8 +253,9 @@
 
         <div class="contenedor">
             <div>
-                <h4>Contactanos</h4>
-                <ul>
+                <h3 id="contactanos">Contactanos</h3>
+                <hr>
+                <ul class="listaC">
                     <li>Cucuta: 5-555-555</li>
                     <li>Bogota: 6-666-666</li>
                     <li>Bucaramanga: 7-777-777</li>
@@ -263,8 +264,9 @@
                 </ul>
             </div>
             <div>
-                <h4>Nosotros</h4>
-                <ul>
+                <h3 id="nosotros">Nosotros</h3>
+                <hr>
+                <ul class="listaN">
                     <li>¿Quienes somos?</li>
                     <li>Vision</li>
                     <li>Mision</li>
@@ -275,8 +277,9 @@
                 </ul>
             </div>
             <div>
-                <h4>Mas Informacion</h4>
-                <ul>
+                <h3 id="mas">Mas Informacion</h3>
+                <hr>
+                <ul class="listaM">
                     <li>Terminos y Condiciones</li>
                     <li>Garantia</li>
                     <li>Trabajar con nosotros</li>
@@ -321,6 +324,19 @@
                 }
             }
         })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#mas').click(function(){
+                $('.listaM').slideToggle();
+            });
+            $('#nosotros').hover(function(){
+                $('.listaN').slideToggle();
+            });
+            $('#contactanos').click(function(){
+                $('.listaC').slideToggle();
+            });
+        });
     </script>
 </body>
 

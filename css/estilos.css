@@ -12,6 +12,10 @@ body {
     float: right;
     margin-right: 10px; 
 }
+
+span{
+    width: 20px;
+}
 /* header {
     display: flex;
     justify-content: space-between;
@@ -177,15 +181,25 @@ footer img:hover {
     transition: 0.4s;
 }
 
-footer ul, h4 {
+footer ul {
     color: #fff;
-    margin-top: 40px;
+    font-size: 10px;
+}
+
+footer h3{
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
 }
 
 footer ul li {
-    display: flex;
+    margin: 5px;
 }
-@media (max-width: 800px) {
+
+footer .contenedor div{
+    width: 32%;
+}
+@media (max-width: 720px) {
     .contenedor {
         width: 340px;
         margin: auto;
@@ -199,7 +213,26 @@ footer ul li {
         font-size: 1.20rem;
     }
 
-    .item img {
-        width: 100%;
+   
+.item img{
+    width: 100%;
+}
+    #porQueNosotros .contenedor{
+        flex-direction: column;
     }
+    .nosotros{
+        width: 90%;
+        margin-left: 8px;
+    }
+    footer .contenedor {
+    flex-direction: column;    
+    width: 250px;
+}
+    footer .contenedor div {
+    width: 100%;
+}
+    footer ul{
+        display:none;
+    }
+
 }
