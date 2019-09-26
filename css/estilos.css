@@ -156,6 +156,7 @@ p {
     position: absolute;
     left: 0;
     bottom: 0;
+    width: 324px;
 }
 footer {
     background: #2F2F2F;
@@ -199,9 +200,9 @@ footer ul li {
 footer .contenedor div{
     width: 32%;
 }
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     .contenedor {
-        width: 340px;
+        width: 100%;
         margin: auto;
     }
 
